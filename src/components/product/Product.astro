@@ -1,0 +1,55 @@
+---
+import CardProduct from "./CardProduct.astro";
+
+import arroz from "../../asset/arroz.jpeg";
+import arroz_2 from "../../asset/arroz_2.jpeg";
+import cama from "../../asset/cama.jpeg";
+import consultorio from "../../asset/consultorio.jpeg";
+import sala from "../../asset/sala.jpeg";
+import sala_2 from "../../asset/sala_2.jpeg";
+import sala_completa from "../../asset/sala_completa.jpeg";
+import muebles from "../../asset/muebles.jpeg";
+
+---
+
+<div id="pricing" class="w-full max-w-6xl mx-auto" x-intersect="activeStep = 'spy-3'">
+    <div class="p-6 md:p-10 rounded-2xl bg-muted-200 dark:bg-muted-900">
+       <div class="grid md:grid-cols-2 ltablet:grid-cols-3 lg:grid-cols-3 gap-6">
+           <CardProduct 
+           logo={sala_completa}
+           titulo="Salas Elegantes"
+           desc="Descubre cómo transformar tu sala en un espacio de elegancia y estilo con nuestras ideas de diseño inspiradoras."
+           />
+           <CardProduct 
+            logo={muebles}
+            titulo="Muebles Elegantes"
+            desc=" Descubre nuestra exclusiva selección de muebles que añaden un toque de sofisticación y estilo a cualquier diseño interior."
+           />
+           <CardProduct 
+            logo={cama}
+            titulo="Habitaciones excepcionales"
+            desc="Desde dormitorios lujosos hasta espacios creativos, cada ambiente está cuidadosamente creado para inspirar y encantar."
+           />
+           <CardProduct 
+            logo={sala}
+            titulo="Las Mejores Salas de Estar"
+            desc="Descubre cómo crear espacios acogedores y elegantes que reflejen tu personalidad y maximicen el confort en tu hogar."
+           />
+           <CardProduct 
+            logo={sala_2}
+            titulo="Las Mejores Salas de Estar"
+            desc="Descubre cómo crear espacios acogedores y elegantes que reflejen tu personalidad y maximicen el confort en tu hogar."
+           />
+           <CardProduct 
+            logo={consultorio}
+            titulo="Los Mejores Consultorios"
+            desc="Desde la disposición inteligente del mobiliario hasta la elección de colores que transmiten calma, cada detalle se ha cuidado para crear un entorno profesional acogedor y funcional."
+           />
+           <CardProduct 
+           logo={arroz}
+           titulo="Ultimos Proyectos"
+           desc="Diseño de negocio y distribucion de uno de los mejores vendedores de arroz con leche en colombia."
+           />
+       </div>
+    </div>
+</div>

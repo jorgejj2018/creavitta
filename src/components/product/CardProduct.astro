@@ -1,0 +1,20 @@
+---
+import { Image } from "astro:assets"
+
+const {logo,titulo,desc} = Astro.props;
+
+---
+<div class="w-11/12 mx-auto shadow-lg shadow-cyan-700 rounded xl:hover:-translate-y-1 xl:hover:scale-105 xl:duration-0">
+    
+  <div class="max-w-sm rounded hover:bg-sky-200">
+      <a href="#">
+          <Image src={logo} alt="logo arroz">
+      </a>
+      <div class="p-5">
+          <a href="#">
+              <h5 class="text-black font-medium text-2xl mb-2">{titulo}</h5>
+              <p class="font-light text-black mb-3">{desc}</p>
+            </a>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+---
+import CardNosotros from "../nosotros/CardNosotros.astro"
+import Conocenos from "../nosotros/Conocenos.astro"
+import CardTeam from "../nosotros/CardTeam.astro"
+---
+
+<div id="pricing" class="w-full max-w-6xl mx-auto" x-intersect="activeStep = 'spy-3'">
+    <div class="p-6 md:p-10 rounded-2xl bg-muted-200 dark:bg-muted-900">
+        <h1 class="text-4xl font-light  sm:text-4xl mb-20 text-center">Somos</h1>
+      <div class="grid md:grid-cols-2 ltablet:grid-cols-3 lg:grid-cols-3 gap-6">
+        <CardNosotros/>
+        <CardNosotros/>
+        <CardNosotros/>
+      </div>
+
+      <h1 class="text-4xl font-light  sm:text-4xl text-center mt-9">Nuestro equipo</h1>
+    </div>
+    <div class="grid md:grid-cols-2 ltablet:grid-cols-3 lg:grid-cols-3 gap-6">
+    
+    <CardTeam
+    cargo="Expertos"
+    categoria="Diseñadores"
+    />
+    <CardTeam
+    cargo="Expertos"
+    categoria="Deliniantes"
+    />
+    <CardTeam
+    cargo="Expertos"
+    categoria="Comunity Manager"
+    />
+    </div>
+    <Conocenos/>
+  
+  
+  

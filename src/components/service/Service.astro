@@ -1,0 +1,34 @@
+---
+import CardPrice from "./CardPrice.astro";
+---
+
+<div id="pricing" class="w-full max-w-6xl mx-auto" x-intersect="activeStep = 'spy-3'">
+    <div class="p-6 md:p-10 rounded-2xl bg-muted-200 dark:bg-muted-900">
+       <div class="grid md:grid-cols-2 ltablet:grid-cols-3 lg:grid-cols-3 gap-6">
+          <!-- Pricing option -->
+          <CardPrice 
+            precio="10/49" 
+            nombre="Plan Basico"    
+            desc="Transforma tu espacio con nuestro Plan Básico."
+            chOne="Recorrido 3D básico incluido."
+            chTwo="Entrega de renders de alta calidad."
+            chThree="Asesoramiento limitado"
+            />
+          <CardPrice 
+            precio="50/99" 
+            nombre="Plan Estandar"  
+            desc="Eleva tu diseño de interiores al siguiente nivel con nuestro Plan Estándar."
+            chOne="Recorrido 3D detallado incluido."
+            chTwo="Entrega de renders de alta calidad."
+            chThree="Asesoramiento personalizado"
+            />
+          <CardPrice 
+            precio="100+" 
+            nombre="Plan Premium"  
+            desc="Experimenta la máxima excelencia con nuestro Plan Premium."
+            chOne="Recorrido 3D de alta calidad incluido."
+            chTwo="Entrega de renders de alta calidad."
+            chThree="Asesoramiento y Ejecución"
+            />
+       </div>
+ </div>
