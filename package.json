@@ -10,7 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/netlify": "^5.2.0",
+    "@astrojs/netlify": "^5.4.0",
     "@astrojs/tailwind": "^5.1.0",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
